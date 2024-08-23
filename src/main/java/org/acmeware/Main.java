@@ -8,16 +8,13 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        Scanner sc=new Scanner("java 100\n" +
+        Scanner sc = new Scanner("java 100\n" +
                 "cpp 65\n" +
                 "python 50");
         System.out.println("================================");
-        for(int i=0;i<3;i++){
-            String s1="";
-            int x=0;
-            //Complete this line
-            s1=sc.next();
-            x=sc.nextInt();
+        for (int i = 0; i < 3; i++) {
+            String s1 = sc.next();
+            int x = sc.nextInt();
             System.out.printf("%1$-14s %2$03d", s1, x);
             System.out.println("");
         }
