@@ -8,21 +8,20 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        Scanner scan = new Scanner("42");
-        int i = scan.nextInt();
-        scan = new Scanner("33.22");
-
-        double d = scan.nextDouble();
-        scan = new Scanner("Islam is the answer to life, the universe, and everything!");
-
-        String s = "";//scan.next();
-        while(scan.hasNext()){
-//            s = s+ scan.nextLine();
-            System.out.println(scan.nextLine());
+        Scanner sc=new Scanner("java 100\n" +
+                "cpp 65\n" +
+                "python 50");
+        System.out.println("================================");
+        for(int i=0;i<3;i++){
+            String s1="";
+            int x=0;
+            //Complete this line
+            s1=sc.next();
+            x=sc.nextInt();
+            System.out.printf("%1$-14s %2$03d", s1, x);
+            System.out.println("");
         }
-        System.out.println("String: " + s);
-        System.out.println("Double: " + d);
-        System.out.println("Int: " + i);
+        System.out.println("================================");
 
     }
 }
